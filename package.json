@@ -1,0 +1,26 @@
+{
+    "name": "oaskew-website",
+    "private": true,
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "@babel/preset-react": "^7.9.4",
+        "babel-core": "7.0.0-bridge.0",
+        "babel-loader": "^8.1.0",
+        "eslint": "^6.8.0",
+        "lerna": "^3.20.2"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js"
+    },
+    "version": "0.1.1",
+    "description": "my portfolio and freelancing websites",
+    "main": "index.js",
+    "author": "slightly-askew <oli@oaskew.co.uk>",
+    "license": "MIT",
+    "dependencies": {}
+}
