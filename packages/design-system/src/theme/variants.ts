@@ -7,6 +7,7 @@ export default {
   layout: {
     navbar_overlay: {
       bg: 'overlay',
+      transition: 'color 0.2s',
     },
     navbar_shadow: {
       bg: 'overlay_border',

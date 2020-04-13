@@ -23,6 +23,7 @@ export const theme = {
   styles: {
     root: {
       bg: 'background',
+      transition: 'background-color 0.2s',
     },
   },
 }
