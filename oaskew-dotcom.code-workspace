@@ -1,8 +1,16 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.options": {
+      "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+    },
+    "eslint.workingDirectories": ["auto"]
+  }
 }

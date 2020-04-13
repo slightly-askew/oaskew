@@ -1,0 +1,29 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "emotion",
+    "lodash",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@components": "./packages/design-system/src/components",
+          "@theme": "./packages/design-system/src/theme"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "emotion", // emotion must be first for all environments
+          {
+            "sourceMap": true
+          }
+        ]
+      ]
+    }
+  }
+}

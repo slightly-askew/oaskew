@@ -1,12 +1,20 @@
 {
   "parser": "babel-eslint",
+  "sourceType": "module",
+  "ecmaFeatures": {
+    "modules": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:mdx/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint"
   ],
-  "plugins": ["react-hooks"],
+  "plugins": ["react-hooks", "import"],
   "env": {
     "browser": true,
     "node": true
@@ -15,8 +23,12 @@
     "strict": 0
   },
   "settings": {
+    "import/extensions": [".js", ".jsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".js", ".jsx"]
+    },
     "import/resolver": {
-      "babel-module": {}
+      "babel-module": { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     }
   }
 }

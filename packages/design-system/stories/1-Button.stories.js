@@ -1,23 +1,23 @@
-import React from "react";
-import { action } from "@storybook/addon-actions";
-import { Button } from "../src/components/Button";
+import React from 'react'
+import { action } from '@storybook/addon-actions'
+import { Button } from '../src/components/Button'
 
 export default {
-  title: "Button",
+  title: 'Button',
   component: Button,
-};
+}
 
 export const Text = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
-);
+  <Button onClick={action('clicked')}>Hello Button</Button>
+)
 export const Goodbye = () => (
-  <Button onClick={action("clicked")}>Goodbye Button</Button>
-);
+  <Button onClick={action('clicked')}>Goodbye Button</Button>
+)
 
 export const Emoji = () => (
-  <Button onClick={action("clicked")}>
+  <Button onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
   </Button>
-);
+)
